@@ -50,4 +50,21 @@ class QuizBrain {
   bool getAnswer() {
     return _questionBank[_questionNumber].questionAnswer;
   }
+
+   isFinished() {
+    if (_questionNumber >= _questionBank.length - 1) {
+      print('Return true');
+      return true;
+      
+    } else {
+
+      print('return false');
+      return false;
+    }
+  }
+
+  reset () {
+    _questionNumber = 0;
+    } 
+  
 }
